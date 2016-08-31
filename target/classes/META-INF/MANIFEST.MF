@@ -1,10 +1,11 @@
 Manifest-Version: 1.0
 Implementation-Vendor: Pivotal Software, Inc.
-Implementation-Title: szyt
+Implementation-Title: springbootfirst
 Implementation-Version: 0.0.1-SNAPSHOT
 Implementation-Vendor-Id: com.dcits
 Build-Jdk: 1.7.0_25
 Built-By: Administrator
 Created-By: Maven Integration for Eclipse
-Implementation-URL: http://projects.spring.io/spring-boot/szyt/
+Implementation-URL: http://projects.spring.io/spring-boot/springbootfi
+ rst/
 
