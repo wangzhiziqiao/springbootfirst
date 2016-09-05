@@ -1,10 +1,35 @@
-<!DOCTYPE html>  
-<html>  
-<head lang="en">  
-    <meta charset="UTF-8" />
-    <title></title>
-</head>  
-<body>  
-<h1 th:text="${host}">Hello World</h1>  
-</body>  
-</html>  
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8" />
+<title></title>
+<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#classesSubmit").on('click', function classesSubmit() {
+			var postData = {
+				"classesId" : "1",
+				"classesName" : "aaa"
+			};
+			postData.classesName = $("#classesName").val();
+			$.ajax({
+				url : "classes/1/",
+				method : "put",
+				data : postData
+			}).done(function(data) {
+				alert(data);
+			});
+		});
+	});
+</script>
+</head>
+<body>
+	<h1 th:text="${host}">Hello World</h1>
+	<form action="classes/1/" method="put">
+		<input name="classesId" value="1" /> <input id="classesName"
+			name="classesName" value="" /> <input type="submit" value="commit" />
+	</form>
+	<input id="classesSubmit" type="button"
+		value="提交" />
+</body>
+</html>
