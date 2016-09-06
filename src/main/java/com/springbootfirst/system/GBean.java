@@ -3,10 +3,19 @@ package com.springbootfirst.system;
 import java.util.List;
 import java.util.Map;
 
+
+/**
+ * 
+ * @author wangqiao
+ * 		   wangzhiziqiao@163.com	
+ *
+ */
 public class GBean {
 	/**
 	 * 
-	 * @param strs
+	 * @param packageName
+	 * @param className
+	 * @param list
 	 * @return
 	 */
 	public static String gBean(String packageName, String className, List<Map<String, String>> list) {

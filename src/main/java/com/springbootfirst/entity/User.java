@@ -1,9 +1,14 @@
 package com.springbootfirst.entity;
 
+import com.springbootfirst.system.annotation.LessThan;
+import com.springbootfirst.system.annotation.Like;
+
 public class User extends A {
 	private Long id;
 	private Long userid;
+	@Like(position=0)
 	private String name;
+	@LessThan(iscontain=true)
 	private Integer age;
 	private Long user2id;
 

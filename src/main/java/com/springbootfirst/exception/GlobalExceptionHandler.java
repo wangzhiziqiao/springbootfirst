@@ -9,6 +9,13 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.springbootfirst.returnData.Info;
 
+
+/**
+ * 
+ * @author wangqiao
+ * 		   wangzhiziqiao@163.com	
+ *
+ */
 @ControllerAdvice
 public class GlobalExceptionHandler {
 	public static final String DEFAULT_ERROR_VIEW = "error";

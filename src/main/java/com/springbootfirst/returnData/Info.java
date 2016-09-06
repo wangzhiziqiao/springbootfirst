@@ -4,6 +4,13 @@ import org.apache.commons.lang.StringUtils;
 
 import com.springbootfirst.exception.StatusConstant;
 
+/**
+ * 
+ * @author wangqiao
+ * 		   wangzhiziqiao@163.com	
+ *
+ * @param <T>
+ */
 public class Info<T> {
 	private String code = StatusConstant.OK;
 	private String message = "返回正确的结果！";
